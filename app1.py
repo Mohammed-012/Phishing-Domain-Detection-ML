@@ -3,7 +3,7 @@ from pickle import load
 import pandas as pd
 import re
 import random
-import tldextract
+#import tldextract
 from urllib.parse import urlparse
 
 
@@ -18,7 +18,7 @@ st.title('Model Deployment: Phishing Domain Detection')
 def prediction():    
     pass
 def user_input_features(url1):
-    tld = tldextract.extract(url1).suffix
+    #tld = tldextract.extract(url1).suffix
     dir = urlparse(url1).path
     path = (url1.split('/'))[-1]
     # vowels = ['a','e','i','o','u','A','E','I','O','U']
@@ -53,7 +53,7 @@ def user_input_features(url1):
     qty_asterisk_params = url1.count('*')
     qty_at_params = url1.count('@')
 
-    domain_length = len(tld)
+    #domain_length = len(tld)
     domain_spf = random.choice([-1, 0, 1])
 
 # 'qty_slash_directory', 'qty_questionmark_directory', 'qty_at_directory',
