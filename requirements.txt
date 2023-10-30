@@ -1,10 +1,6 @@
 pandas
 streamlit
 scikit-learn
-pickel
 urllib
 tldextract
 random
-
-
-
