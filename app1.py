@@ -100,7 +100,7 @@ prediction = loaded_model.predict(df)
 
 if url!="":
     st.subheader('Predicted Result')
-    if prediction == 0 :
+    if prediction > 0.5 :
         st.write("Yes")
     else:
         st.write("No")
